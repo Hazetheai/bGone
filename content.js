@@ -36,6 +36,7 @@ function hoverElement(e) {
 }
 
 function deleteElement(e) {
+  e.preventDefault();
   let element = e.target || e.srcElement;
   element.style.display = "none";
 }
