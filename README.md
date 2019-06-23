@@ -20,7 +20,7 @@ Currently doesn't work for buttons and iframes. That's the next step.
 ******************************************************************************
 
 #### Planned features
-1) ~~Stop navigation to urls if link/button is pressed~~
+1) ~Stop navigation to urls if link/button is pressed~ ([issue #1](https://github.com/Hazetheai/bGone/issues/1) fixed in [commit 1e49b57](https://github.com/Hazetheai/bGone/commit/1e49b5745aa0be7911154753e97ceb8334065c0e))
    
 2) Button command to restore accidentally deleted item
 
