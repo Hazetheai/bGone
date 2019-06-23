@@ -39,6 +39,7 @@ function deleteElement(e) {
   e.preventDefault();
   let element = e.target || e.srcElement;
   element.style.display = "none";
+  return false;
 }
 
 document.addEventListener("keydown", checkKeyPressed, false);
