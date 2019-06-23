@@ -20,10 +20,12 @@ Currently doesn't work for buttons and iframes. That's the next step.
 ******************************************************************************
 
 #### Planned features
-1) Button command to restore accidentally item
+1) ~~Stop navigation to urls if link/button is pressed~~
+   
+2) Button command to restore accidentally deleted item
 
-2) Deletion History
+3) Deletion History
 
-3) Remove modals and no scroll scripts.
+4) Remove modals and no scroll scripts.
 
-4) Make browsing the web a little less cluttered
+5) Make browsing the web a little less cluttered
