@@ -20,7 +20,7 @@ Currently doesn't work for buttons and iframes. That's the next step.
 ******************************************************************************
 
 #### Planned features
-1) ~~Stop navigation to urls if link/button is pressed~~
+1) Stop navigation to urls if link/button is pressed
    
 2) Button command to restore accidentally deleted item
 
