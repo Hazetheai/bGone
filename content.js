@@ -3,7 +3,10 @@
 // assigns display: none style to element
 let elementArray = [];
 let recentKeys = [];
-
+const deletionHistory = [];
+const dblTaps = [];
+let timeout;
+let lastTap = 0;
 // If d key is pressed add listener to document.
 function checkKeyPressed(evt) {
   if (evt.keyCode != "66") {
@@ -49,10 +52,38 @@ function deleteElement(e) {
   } else {
     e.preventDefault();
     let element = e.target || e.srcElement;
+    deletionHistory.unshift({
+      el: element,
+      display: element.style.display || "block"
+    });
     element.style.display = "none";
     return false;
   }
 }
+
+function restoreLast() {
+  if (deletionHistory.length) {
+    let lastElement = deletionHistory[0];
+    lastElement.el.style.display = lastElement.display;
+    deletionHistory.shift();
+  } else return "";
+}
+
+// checks for double-taps on b key
+document.addEventListener("keyup", function(event) {
+  var currentTime = new Date().getTime();
+  var tapLength = currentTime - lastTap;
+  clearTimeout(timeout);
+  if (tapLength < 500 && tapLength > 0) {
+    restoreLast();
+    event.preventDefault();
+  } else {
+    timeout = setTimeout(function() {
+      clearTimeout(timeout);
+    }, 500);
+  }
+  lastTap = currentTime;
+});
 
 document.addEventListener("keydown", checkKeyPressed, false);
 
