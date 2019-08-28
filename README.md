@@ -12,7 +12,12 @@ Hold down the **B** key and hover over the element you want to delete.
 
 It simply sets the css property display to none.
 
-Currently doesn't work for buttons and iframes. That's the next step.
+You may need to move the mouse slightly - when you see the purple background, you know what element you have selected.
+
+If you've deleted something you didn't mean to, just double-tap the **B** key to bring elements back.
+
+They will return in the order they were deleted.
+
 
 ---
 
@@ -24,7 +29,7 @@ Currently doesn't work for buttons and iframes. That's the next step.
 
 3. Deletion History - [x]
 
-4. Remove modals and no scroll scripts. - []
+4. Remove modals and no-scroll scripts. - []
 
 5. Make browsing the web a little less cluttered - [x]
 
