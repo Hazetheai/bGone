@@ -17,7 +17,10 @@
     }
   ],
   "icons": {
-    "48": "images/Icon-transparent.svg"
+    "16": "icons/Icon-16.png",
+    "32": "icons/Icon-32.png",
+    "48": "icons/Icon-48.png",
+    "96": "icons/Icon-transparent.svg"
   },
   "manifest_version": 2
 }
